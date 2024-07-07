@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\asp\\first project\\Ahmed Sayed Final Project asp.net ITI\\Ahmed Sayed Final Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A8AFEF0-0D49-43C1-B907-08D54CB42A73}|Ahmed Sayed Final Project\\Ahmed Sayed Final Project.csproj|d:\\asp\\first project\\ahmed sayed final project asp.net iti\\ahmed sayed final project\\ahmed sayed final project\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A8AFEF0-0D49-43C1-B907-08D54CB42A73}|Ahmed Sayed Final Project\\Ahmed Sayed Final Project.csproj|solutionrelative:ahmed sayed final project\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\asp\\first project\\Ahmed Sayed Final Project asp.net ITI\\Ahmed Sayed Final Project\\Ahmed Sayed Final Project\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Ahmed Sayed Final Project\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\asp\\first project\\Ahmed Sayed Final Project asp.net ITI\\Ahmed Sayed Final Project\\Ahmed Sayed Final Project\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Ahmed Sayed Final Project\\Controllers\\CoursesController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwBcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T02:29:14.851Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

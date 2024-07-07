@@ -1,0 +1,28 @@
+﻿@model Course
+<div class="alert alert-success text-center fw-bold display-3">Details</div>
+
+<dl class="row">
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.Id)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Id)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.CourseName)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.CourseName)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.CourseCode)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.CourseCode)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.Price)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Price)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.Description)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Description)</dd>
+
+   <dt class="col-3">@Html.DisplayNameFor(m=>m.ProfessorId)</dt>
+    <dd class="col-9">
+        <a asp-controller="Professors" asp-action="Details" asp-route-id="@Model.ProfessorId">
+            @Html.DisplayFor(m=>m.Professor.FullName)
+        </a>
+    </dd>
+</dl>
+<br />
+<a asp-controller="Courses" asp-action="GetIndexView" class="btn btn-danger">Back TO The List</a>

@@ -1,0 +1,34 @@
+﻿@model Course
+<div class="alert alert-danger display-3 fw-bold text-center display-5">Are you sure that you want to delete this Course?</div>
+
+<dl class="row">
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.Id)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Id)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.CourseName)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.CourseName)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.CourseCode)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.CourseCode)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.Price)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Price)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.Description)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Description)</dd>
+
+    <dt class="col-3">@Html.DisplayNameFor(m=>m.ProfessorId)</dt>
+    <dd class="col-9">@Html.DisplayFor(m=>m.Professor.FullName)</dd>
+</dl>
+
+
+
+<form method="post" asp-controller="Courses" asp-action="DeleteCourse">
+    <input asp-for="@Model.Id" hidden />
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+<br />
+<a asp-controller="Courses" asp-action="GetIndexView" class="btn btn-dark">Back TO The List</a>
+
+
+

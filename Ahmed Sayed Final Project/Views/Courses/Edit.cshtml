@@ -1,0 +1,40 @@
+﻿@model Course
+<div class="alert alert-success text-center fw-bold display-3">Edit Course</div>
+
+<form class="col-3" method="post" asp-controller="Courses" asp-action="EditCourse">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input asp-for="Id" hidden/>
+    <div>
+        <label asp-for="CourseName"></label>
+        <input asp-for="CourseName" class="form-control" />
+        <span asp-validation-for="CourseName" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="CourseCode"></label>
+        <input asp-for="CourseCode" class="form-control" />
+        <span asp-validation-for="CourseCode" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="ProfessorId"></label>
+        <select asp-for="ProfessorId" asp-items="@(new SelectList(ViewBag.AllProfessors,"Id","FullName"))" class="form-control">
+            <option disabled selected>select a professor</option>
+        </select>
+        <span asp-validation-for="ProfessorId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Edit</button>
+</form>
+<br />
+<a asp-controller="Courses" asp-action="GetIndexView" class="btn btn-danger">Back TO The List</a>
+
